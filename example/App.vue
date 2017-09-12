@@ -1,17 +1,24 @@
 <template>
-	<div id="app">
-		<upload-file :acceptedFormats="['application/pdf', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/msword']" :isDragDrop="true"></upload-file>
-	</div>
+  <div id="app">
+    <vue-uploader
+      :acceptedFormats="acceptedFormats"
+      :isDragDrop="true" />
+  </div>
 </template>
 
 <script>
-
-import UploadFile from '../src/components/UploadFile.vue'
-
-export default {
-	name: 'UploadApp',
-	components: {
-		UploadFile
-	}
-}
+  import VueUploader from '../src/components/VueUploader.vue'
+  export default {
+    name: 'VueUploaderExample',
+    components: { VueUploader },
+    data () {
+      return {
+        acceptedFormats: [
+          'application/pdf',
+          'application/msword',
+          'audio/mp3'
+        ]
+      }
+    }
+  }
 </script>

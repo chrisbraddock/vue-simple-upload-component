@@ -1,32 +1,29 @@
 {
-  "name": "vue-simple-upload-component",
-  "version": "0.5.5",
+  "name": "vue-uploader",
+  "version": "1.0.0",
   "description": "A simple upload component for Vue.js 2.x",
   "main": "./dist/vue-simple-upload.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cezardasilva/vue-upload-component.git"
+    "url": "git@github.com:chrisbraddock/vue-uploder.git"
   },
   "keywords": [
     "vue",
-    "vue-component",
-    "vue-upload",
-    "file-upload",
-    "uploader",
     "upload"
   ],
-  "author": "Cezar Alexandre",
+  "author": "Chris Braddock",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cezardasilva/vue-upload-component/issues"
+    "url": "https://github.com/chrisbraddock/vue-uploder/issues"
   },
-  "homepage": "https://github.com/cezardasilva/vue-upload-component#readme",
+  "homepage": "https://github.com/chrisbraddock/vue-uploder/blob/master/README.md",
   "dependencies": {
-    "vue": "^2.1.0"
+    "vue": "^2.2.4"
   },
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.dev.conf.js --open --inline --hot",
-    "build": "cross-env NODE_ENV=production webpack --config build/webpack.dist.conf.js --progress --hide-modules "
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.dev.conf.js --inline --hot",
+    "build": "cross-env NODE_ENV=production webpack --config build/webpack.dist.conf.js --progress --hide-modules",
+    "build:watch": "cross-env NODE_ENV=production webpack --config build/webpack.dist.conf.js --progress --hide-modules --watch"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
@@ -53,11 +50,10 @@
     "node-sass": "^4.5.0",
     "sass-loader": "^6.0.2",
     "scss-loader": "0.0.1",
-    "vue": "^2.2.4",
     "vue-loader": "^10.0.0",
     "vue-template-compiler": "^2.1.0",
-    "webpack": "^2.1.0-beta.25",
-    "webpack-dev-server": "^2.1.0-beta.0",
-    "webpack-merge": "^0.14.1"
+    "webpack": "^2.7.0",
+    "webpack-dev-server": "^2.7.0",
+    "webpack-merge": "^4.1.0"
   }
 }
